@@ -1,0 +1,206 @@
+body {
+  background-color: #ffcccc;
+  color: #0000ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: #ffcccc;
+  color: #fdfdfd;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(42, 148, 255);
+  margin-bottom: 10px;
+}
+
+main {
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+h1 {
+  color: inherit;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h2 {
+  text-shadow: -1px -1px 0 rgb(96, 3, 3), 1px -1px 0 rgb(96, 3, 3),
+    -1px 1px 0 rgb(96, 3, 3), 1px 1px 0 rgb(96, 3, 3),
+    2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+  color: #e74c3c; /* Change color on hover */
+  text-decoration: underline;
+}
+
+#titre {
+  /* Pour indiquer d'avance qu'il est block (condition du js)  */
+  display: block;
+}
+
+button {
+  background-color: rgb(42, 148, 255);
+  color: #ffcccc;
+  border: 2px solid #ffcccc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #ffcccc;
+  color: rgb(42, 148, 255);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+  outline: none;
+}
+
+.button-3d {
+  transition: transform 0.3s;
+}
+
+.button-3d:hover {
+  transform: translateZ(5px);
+}
+
+img {
+  width: 370px;
+  height: 180px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 30%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container h2 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 23%;
+}
+
+.form-group-radio {
+  display: flex;
+}
+
+.form-group-radio label {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.form-group-radio label,
+.form-group-radio input[type="radio"] {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  font-size: 14px; /* Set the font size for radio button labels */
+}
+
+.erreur {
+  color: red;
+  white-space: pre-line;
+}
+
+footer {
+  background-color: rgb(42, 148, 255);
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 20px;
+}
+
+.footer {
+  color: rgb(220, 221, 232);
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px;
+}
+
+.contenu {
+  text-align: center;
+  justify-content: center;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Style table header */
+#table th {
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style table cells */
+#table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Apply alternating row colors for better readability */
+#table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

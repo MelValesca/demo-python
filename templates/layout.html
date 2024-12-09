@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/demo.css') }}">
+    <script src="../static/lab10.js"></script>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Demo INF3190</h1>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!-- Le contenu de la page va se trouver ici -->
+            {% block content %}{% endblock %}
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footer">&copy; 2023 Demo 3190. Tout droits réservés.</p>
+        <p class="footer">Fait par Melissa Valesca Vallee</p>
+    </footer>
+
+</body>
+
+</html>

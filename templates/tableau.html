@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Tableau{% endblock %}
+
+{% block content %}
+<h2 class="erreur">Resultats</h2>
+<table id="table">
+    <tr>
+        <th>Nom</th>
+        <th>Prenom</th>
+        <th>Âge</th>
+    </tr>
+
+    {% for i in range(0, len) %}
+    <tr>
+        <td>{{ resultats[i][0] }}</td>
+        <td>{{ resultats[i][1] }}</td>
+        <td>{{ resultats[i][2] }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+<button onclick="trierParNom()">Trier par nom</button>
+<a href="/">Retour au formulaire </a>
+
+{% endblock %}

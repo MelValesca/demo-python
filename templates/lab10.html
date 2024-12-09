@@ -1,0 +1,32 @@
+<!-- templates/layout.html -->
+{% extends 'layout.html' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+
+<form action="/submit" method="post">
+    <h2>Formulaire</h2>
+
+    <p class="erreur">{{ erreur }}</p>
+
+    <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" value="{{nom}}">
+    </div>
+
+    <div class="form-group">
+        <label for="prenom">Prenom :</label>
+        <input type="text" name="prenom" id="prenom" value="{{prenom}}">
+    </div>
+
+    <div class="form-group">
+        <label for="age">Âge :</label>
+        <input type="number" name="age" id="age" value="{{age}}">
+    </div>
+
+
+    <button type="submit">Envoyer</button>
+</form>
+
+{% endblock %}
